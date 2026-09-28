@@ -1,0 +1,18 @@
+# Liste blanche : seuls les fichiers explicitement autorisés ci-dessous sont publiés.
+# Les corrections et les sources de génération (_outils/) ne doivent JAMAIS être poussées.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/Pense_bete_Pandas.md
+
+!/TP1_Clustering/
+/TP1_Clustering/*
+!/TP1_Clustering/TP1_Cours.md
+!/TP1_Clustering/TP1_Enonce.ipynb
+!/TP1_Clustering/data/
+
+# Fichiers système et de travail
+.DS_Store
+.ipynb_checkpoints/
+*_Correction.ipynb

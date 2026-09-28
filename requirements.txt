@@ -1,0 +1,8 @@
+numpy
+pandas>=2.2
+matplotlib
+scipy
+scikit-learn>=1.6
+xgboost>=2.1
+statsmodels>=0.14
+jupyterlab
