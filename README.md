@@ -4,6 +4,13 @@ Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentiss
 
 **Prérequis** : Python et pandas. Un [pense-bête pandas](Pense_bete_Pandas.md) est fourni : gardez-le ouvert pendant les TP.
 
+## Le cours magistral
+
+| Partie | Contenu |
+|---|---|
+| [Partie 1 — Une histoire de l'IA](Cours_magistral/CM1_Histoire_IA.pptx) | des pionniers (Turing, 1950) à l'IA générative, en six époques, avec leurs applications concrètes |
+| [Partie 2 — Les notions du semestre](Cours_magistral/CM2_Notions_du_semestre.pptx) | A. IA prédictive : clustering, classification, régression, séries temporelles ; B. IA générative : utiliser des grands modèles de langage (API, prompts, sorties structurées, RAG, agents) |
+
 ## Les TP
 
 | TP | Thème | Jeu de données | Notions principales |

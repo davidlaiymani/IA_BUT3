@@ -6,6 +6,10 @@
 !/requirements.txt
 !/Pense_bete_Pandas.md
 
+!/Cours_magistral/
+/Cours_magistral/*
+!/Cours_magistral/*.pptx
+
 !/TP1_Clustering/
 /TP1_Clustering/*
 !/TP1_Clustering/TP1_Cours.md
