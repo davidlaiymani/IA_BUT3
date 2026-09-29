@@ -4,13 +4,6 @@ Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentiss
 
 **Prérequis** : Python et pandas. Un [pense-bête pandas](Pense_bete_Pandas.md) est fourni : gardez-le ouvert pendant les TP.
 
-## Le cours magistral
-
-| Partie | Contenu |
-|---|---|
-| [Partie 1 — Une histoire de l'IA](Cours/CM1_Histoire_IA.pptx) | des pionniers (Turing, 1950) à l'IA générative, en six époques, avec leurs applications concrètes |
-| [Partie 2 — Les notions du semestre](Cours/CM2_Notions_du_semestre.pptx) | A. IA prédictive : clustering, classification, régression, séries temporelles ; B. IA générative : utiliser des grands modèles de langage (API, prompts, sorties structurées, RAG, agents) |
-
 ## Les TP
 
 | TP | Thème | Jeu de données | Notions principales |
@@ -31,12 +24,26 @@ Chaque énoncé est calibré pour **2 heures** ; la durée indicative de chaque 
 
 ## Installation
 
-Il faut Python 3.10 ou plus récent.
+Deux outils au choix pour créer un environnement Python (3.10 ou plus récent) avec les bibliothèques du cours. Toutes les commandes se lancent depuis la racine du dépôt.
+
+### Avec uv (recommandé)
+
+[uv](https://docs.astral.sh/uv/) est un gestionnaire de paquets Python très rapide.
 
 ```bash
-python -m venv .venv
+uv venv --python 3.12
 source .venv/bin/activate        # Windows : .venv\Scripts\activate
-pip install -r requirements.txt
+uv pip install -r requirements.txt
+jupyter lab
+```
+
+### Avec Conda
+
+Avec [Miniconda](https://docs.anaconda.com/miniconda/) ou [Miniforge](https://github.com/conda-forge/miniforge) :
+
+```bash
+conda create -n ia-but3 -c conda-forge python=3.12 --file requirements.txt
+conda activate ia-but3
 jupyter lab
 ```
 
