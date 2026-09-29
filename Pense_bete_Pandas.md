@@ -108,8 +108,8 @@ df.groupby("classe")["age"].mean()
 df.groupby("classe").agg(age_moyen=("age", "mean"),
                          effectif=("age", "size"),
                          revenu_max=("revenu", "max"))
-df.groupby(["classe", "sexe"])["survie"].mean().unstack()   # tableau croisé
-pd.crosstab(df["classe"], df["survie"], normalize="index")  # proportions par ligne
+df.groupby(["contrat", "internet"])["churn"].mean().unstack()   # tableau croisé
+pd.crosstab(df["contrat"], df["churn"], normalize="index")     # proportions par ligne
 df.pivot_table(values="revenu", index="ville", columns="annee", aggfunc="mean")
 df["moy_classe"] = df.groupby("classe")["age"].transform("mean")  # garde la taille de df
 ```
@@ -164,7 +164,7 @@ df["age"].hist(bins=30)
 df.plot.scatter(x="age", y="revenu", c="cluster", cmap="viridis")
 df.boxplot(column="revenu", by="classe")
 df["ventes"].plot(figsize=(12, 4))
-df.groupby("classe")["survie"].mean().plot.bar()
+df.groupby("contrat")["churn"].mean().plot.bar()
 plt.show()
 ```
 

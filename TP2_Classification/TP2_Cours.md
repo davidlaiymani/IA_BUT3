@@ -20,7 +20,7 @@ On dispose de `n` exemples décrits par des **variables explicatives** (*feature
 |---|---|---|
 | Filtre anti-spam | mots du message, expéditeur | spam / non spam |
 | Diagnostic | analyses sanguines | malade / sain |
-| Titanic (ce TP) | âge, sexe, classe du billet… | survivant / décédé |
+| Attrition des clients (ce TP) | contrat, ancienneté, facture, services… | résilie / reste |
 | Reconnaissance de chiffres | pixels de l'image | 0, 1, …, 9 |
 
 Avec deux classes, on parle de **classification binaire** ; on appelle souvent **classe positive** (codée 1) celle qui nous intéresse.
@@ -54,7 +54,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 ### 2.2 Toujours commencer par une référence (*baseline*)
 
-Un modèle qui prédit toujours la classe majoritaire atteint déjà une exactitude égale à la proportion de cette classe. Sur le Titanic (62 % de décès), « tout le monde meurt » donne **62 %** d'exactitude. Un modèle n'a d'intérêt que s'il fait nettement mieux.
+Un modèle qui prédit toujours la classe majoritaire atteint déjà une exactitude égale à la proportion de cette classe. Dans ce TP, 73 % des clients restent : « personne ne part » donne déjà **73 %** d'exactitude… et ne repère aucun départ. Un modèle n'a d'intérêt que s'il fait nettement mieux.
 
 ```python
 from sklearn.dummy import DummyClassifier
@@ -74,7 +74,7 @@ Les modèles scikit-learn n'acceptent que des **nombres**, **sans valeurs manqua
 
 ### 3.1 Pourquoi un `Pipeline` ?
 
-Les paramètres de préparation (médiane de l'âge, moyenne et écart-type pour la standardisation…) doivent être **appris sur le jeu d'entraînement uniquement**, puis appliqués tels quels au jeu de test. Les calculer sur toutes les données provoque une **fuite de données** (*data leakage*) : de l'information du test s'infiltre dans l'apprentissage et l'évaluation devient trop optimiste.
+Les paramètres de préparation (médiane d'une colonne, moyenne et écart-type pour la standardisation…) doivent être **appris sur le jeu d'entraînement uniquement**, puis appliqués tels quels au jeu de test. Les calculer sur toutes les données provoque une **fuite de données** (*data leakage*) : de l'information du test s'infiltre dans l'apprentissage et l'évaluation devient trop optimiste.
 
 Le `Pipeline` enchaîne préparation et modèle en un seul objet qui respecte automatiquement cette règle, y compris pendant la validation croisée.
 
@@ -85,8 +85,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.linear_model import LogisticRegression
 
-num_cols = ["Age", "Fare"]
-cat_cols = ["Sex", "Embarked"]
+num_cols = ["tenure", "MonthlyCharges"]
+cat_cols = ["Contract", "InternetService"]
 
 preprocess = ColumnTransformer([
     ("num", make_pipeline(SimpleImputer(strategy="median"), StandardScaler()), num_cols),
@@ -133,13 +133,18 @@ Pour classer un nouveau point, on cherche les `k` exemples d'entraînement les p
 L'arbre pose une suite de questions binaires sur les variables, choisies pour séparer au mieux les classes :
 
 ```
-                 Sex = female ?
+               Contrat au mois ?
                 /              \
-             oui                non
+             non                oui
               |                  |
-        Pclass ≤ 2 ?         Age ≤ 6,5 ?
-         /      \             /       \
-   survit (95 %)  …       survit      décède (83 %)
+        reste (7 % de      Fibre optique ?
+          départs)           /         \
+                          non           oui
+                           |             |
+                      28 % de       Ancienneté ≤ 12 mois ?
+                      départs         /           \
+                                    oui            non
+                              part (70 %)     43 % de départs
 ```
 
 À chaque nœud, l'algorithme choisit la question qui rend les deux sous-groupes les plus **purs** possible (critère de Gini ou d'entropie).
