@@ -9,6 +9,7 @@ Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentiss
 | TP | Thème | Jeu de données | Notions principales |
 |---|---|---|---|
 | [TP1](TP1_Clustering/) | **Clustering** | Clients d'un centre commercial | apprentissage non supervisé, standardisation, K-Means, coude et silhouette, ACP, interprétation des segments ; CAH en facultatif |
+| [TP2](TP2_Classification/) | **Classification** | Passagers du Titanic | train / test, baseline, `Pipeline`, régression logistique, k-NN, arbre de décision, matrice de confusion, précision / rappel, ROC, validation croisée |
 
 Les TP suivants seront publiés au fur et à mesure du semestre.
 
@@ -54,3 +55,4 @@ Ouvrez ensuite le notebook d'énoncé depuis le dossier du TP : les chemins vers
 | Fichier | Source |
 |---|---|
 | `TP1_Clustering/data/Mall_Customers.csv` | *Mall Customer Segmentation Data*, Kaggle (jeu de données pédagogique) |
+| `TP2_Classification/data/titanic.csv` | Kaggle, *Titanic — Machine Learning from Disaster* (jeu d'entraînement, 891 passagers) |

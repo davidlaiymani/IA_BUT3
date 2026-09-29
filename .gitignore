@@ -16,6 +16,12 @@
 !/TP1_Clustering/TP1_Enonce.ipynb
 !/TP1_Clustering/data/
 
+!/TP2_Classification/
+/TP2_Classification/*
+!/TP2_Classification/TP2_Cours.md
+!/TP2_Classification/TP2_Enonce.ipynb
+!/TP2_Classification/data/
+
 # Fichiers système et de travail
 .DS_Store
 .ipynb_checkpoints/
