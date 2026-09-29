@@ -6,9 +6,9 @@
 !/requirements.txt
 !/Pense_bete_Pandas.md
 
-!/Cours_magistral/
-/Cours_magistral/*
-!/Cours_magistral/*.pptx
+!/Cours/
+/Cours/*
+!/Cours/*.pptx
 
 !/TP1_Clustering/
 /TP1_Clustering/*
@@ -20,3 +20,4 @@
 .DS_Store
 .ipynb_checkpoints/
 *_Correction.ipynb
+~$*
