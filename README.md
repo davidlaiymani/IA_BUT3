@@ -1,6 +1,6 @@
 # Introduction à l'apprentissage automatique — BUT 3 informatique
 
-Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentissage automatique sur des données tabulaires et temporelles. Il se compose de TP de 2 heures, suivis d'un **projet**.
+Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentissage automatique sur des données tabulaires et temporelles. Il se compose de séances de TP, suivies d'un **projet**.
 
 **Prérequis** : Python et pandas. Un [pense-bête pandas](Pense_bete_Pandas.md) est fourni : gardez-le ouvert pendant les TP.
 
@@ -10,7 +10,7 @@ Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentiss
 |---|---|---|---|
 | [TP1](TP1_Clustering/) | **Clustering** | Clients d'un centre commercial | apprentissage non supervisé, standardisation, K-Means, coude et silhouette, ACP, interprétation des segments ; CAH en facultatif |
 | [TP2](TP2_Classification/) | **Classification** | Clients d'un opérateur télécom (résiliation) | train / test, baseline, `Pipeline`, régression logistique, k-NN, arbre de décision, matrice de confusion, précision / rappel, ROC, validation croisée |
-| [TP3](TP3_XGBoost/) | **XGBoost** | Recensement américain (*Adult*) | méthodes d'ensemble, bagging et boosting, forêt aléatoire, gradient boosting, taux d'apprentissage, arrêt anticipé, classes déséquilibrées, importance et valeurs SHAP ; réglage des hyperparamètres en facultatif |
+| [TP3](TP3_XGBoost/) | **XGBoost** | Recensement américain (*Adult*) | méthodes d'ensemble, bagging et boosting, forêt aléatoire, gradient boosting, taux d'apprentissage, arrêt anticipé, importance et valeurs SHAP ; classes déséquilibrées et réglage des hyperparamètres en facultatif |
 
 Les TP suivants seront publiés au fur et à mesure du semestre.
 
@@ -23,7 +23,7 @@ Les TP suivants seront publiés au fur et à mesure du semestre.
 | `TPn_Correction.ipynb` | la **correction** complète et exécutée, mise en ligne après la séance. |
 | `data/` | le jeu de données du TP. |
 
-Chaque énoncé est calibré pour **2 heures** ; la durée indicative de chaque partie est donnée en tête de notebook. Les parties marquées « facultatif » et « Pour aller plus loin » sont à faire si vous avez terminé le reste.
+Chaque énoncé correspond à une séance de TP. Les parties marquées « facultatif » et « Pour aller plus loin » sont à faire si vous avez terminé le reste.
 
 ## Installation
 
