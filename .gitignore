@@ -22,6 +22,12 @@
 !/TP2_Classification/TP2_Enonce.ipynb
 !/TP2_Classification/data/
 
+!/TP3_XGBoost/
+/TP3_XGBoost/*
+!/TP3_XGBoost/TP3_Cours.md
+!/TP3_XGBoost/TP3_Enonce.ipynb
+!/TP3_XGBoost/data/
+
 # Fichiers système et de travail
 .DS_Store
 .ipynb_checkpoints/
