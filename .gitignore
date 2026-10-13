@@ -26,4 +26,6 @@
 .DS_Store
 .ipynb_checkpoints/
 *_Correction.ipynb
+# Corrections publiées après la séance, UNIQUEMENT sur demande explicite de David :
+!/TP1_Clustering/TP1_Correction.ipynb
 ~$*

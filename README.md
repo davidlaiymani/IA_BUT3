@@ -19,6 +19,7 @@ Les TP suivants seront publiés au fur et à mesure du semestre.
 |---|---|
 | `TPn_Cours.md` | le **cours** : notions, intuitions, formules et extraits de code. À lire avant ou pendant la séance. |
 | `TPn_Enonce.ipynb` | l'**énoncé** sous forme de notebook : questions, cellules `# TODO` à compléter, cellules ✍️ pour les réponses rédigées. |
+| `TPn_Correction.ipynb` | la **correction** complète et exécutée, mise en ligne après la séance. |
 | `data/` | le jeu de données du TP. |
 
 Chaque énoncé est calibré pour **2 heures** ; la durée indicative de chaque partie est donnée en tête de notebook. Les parties marquées « facultatif » et « Pour aller plus loin » sont à faire si vous avez terminé le reste.
