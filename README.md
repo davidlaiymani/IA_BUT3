@@ -11,6 +11,8 @@ Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentiss
 | [TP1](TP1_Clustering/) | **Clustering** | Clients d'un centre commercial | apprentissage non supervisé, standardisation, K-Means, coude et silhouette, ACP, interprétation des segments ; CAH en facultatif |
 | [TP2](TP2_Classification/) | **Classification** | Clients d'un opérateur télécom (résiliation) | train / test, baseline, `Pipeline`, régression logistique, k-NN, arbre de décision, matrice de confusion, précision / rappel, ROC, validation croisée |
 | [TP3](TP3_XGBoost/) | **XGBoost** | Recensement américain (*Adult*) | méthodes d'ensemble, bagging et boosting, forêt aléatoire, gradient boosting, taux d'apprentissage, arrêt anticipé, importance et valeurs SHAP ; classes déséquilibrées et réglage des hyperparamètres en facultatif |
+| [TP4](TP4_Regression/) | **Régression** | Logements en Californie | MAE / RMSE / R², régression linéaire, analyse des résidus, variables polynomiales, régularisation Ridge, modèles à base d'arbres ; Lasso en facultatif |
+| [TP5](TP5_Series_Temporelles/) | **Séries temporelles** | Vélos en libre-service à Washington | tendance et saisonnalité, découpage temporel, références naïves, ARIMA, approche supervisée ; stationnarité, ACF / PACF et validation croisée temporelle en facultatif |
 
 Les TP suivants seront publiés au fur et à mesure du semestre.
 
@@ -59,3 +61,5 @@ Ouvrez ensuite le notebook d'énoncé depuis le dossier du TP : les chemins vers
 | `TP1_Clustering/data/Mall_Customers.csv` | *Mall Customer Segmentation Data*, Kaggle (jeu de données pédagogique) |
 | `TP2_Classification/data/telco_churn.csv` | *Telco Customer Churn*, IBM (dépôt GitHub `IBM/telco-customer-churn-on-icp4d`, licence Apache 2.0), 7 043 clients |
 | `TP3_XGBoost/data/adult.csv.gz` | *Adult*, UCI Machine Learning Repository (via OpenML, jeu n° 1590) |
+| `TP4_Regression/data/california_housing.csv` | *California Housing*, R. K. Pace et R. Barry (1997), via `sklearn.datasets.fetch_california_housing` |
+| `TP5_Series_Temporelles/data/bike_sharing_day.csv` | *Bike Sharing Dataset*, H. Fanaee-T et J. Gama (2013), UCI Machine Learning Repository |

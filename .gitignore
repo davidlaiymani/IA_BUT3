@@ -28,10 +28,23 @@
 !/TP3_XGBoost/TP3_Enonce.ipynb
 !/TP3_XGBoost/data/
 
+!/TP4_Regression/
+/TP4_Regression/*
+!/TP4_Regression/TP4_Cours.md
+!/TP4_Regression/TP4_Enonce.ipynb
+!/TP4_Regression/data/
+
+!/TP5_Series_Temporelles/
+/TP5_Series_Temporelles/*
+!/TP5_Series_Temporelles/TP5_Cours.md
+!/TP5_Series_Temporelles/TP5_Enonce.ipynb
+!/TP5_Series_Temporelles/data/
+
 # Fichiers système et de travail
 .DS_Store
 .ipynb_checkpoints/
 *_Correction.ipynb
 # Corrections publiées après la séance, UNIQUEMENT sur demande explicite de David :
 !/TP1_Clustering/TP1_Correction.ipynb
+!/TP3_XGBoost/TP3_Correction.ipynb
 ~$*
