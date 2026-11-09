@@ -40,6 +40,14 @@
 !/TP5_Series_Temporelles/TP5_Enonce.ipynb
 !/TP5_Series_Temporelles/data/
 
+!/Installer_Ollama.md
+
+!/TP6_LLM_API/
+/TP6_LLM_API/*
+!/TP6_LLM_API/TP6_Cours.md
+!/TP6_LLM_API/TP6_Enonce.ipynb
+!/TP6_LLM_API/data/
+
 # Fichiers système et de travail
 .DS_Store
 .ipynb_checkpoints/

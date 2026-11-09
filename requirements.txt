@@ -6,3 +6,6 @@ scikit-learn>=1.6
 xgboost>=2.1
 statsmodels>=0.14
 jupyterlab
+openai>=2.0
+python-dotenv
+pydantic>=2.0

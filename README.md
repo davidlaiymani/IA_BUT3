@@ -1,6 +1,6 @@
 # Introduction à l'apprentissage automatique — BUT 3 informatique
 
-Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentissage automatique sur des données tabulaires et temporelles. Il se compose de séances de TP, suivies d'un **projet**.
+Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentissage automatique sur des données tabulaires et temporelles, puis l'utilisation de grands modèles de langage (LLM) depuis du code. Il se compose de séances de TP, suivies d'un **projet**.
 
 **Prérequis** : Python et pandas. Un [pense-bête pandas](Pense_bete_Pandas.md) est fourni : gardez-le ouvert pendant les TP.
 
@@ -13,6 +13,7 @@ Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentiss
 | [TP3](TP3_XGBoost/) | **XGBoost** | Recensement américain (*Adult*) | méthodes d'ensemble, bagging et boosting, forêt aléatoire, gradient boosting, taux d'apprentissage, arrêt anticipé, importance et valeurs SHAP ; classes déséquilibrées et réglage des hyperparamètres en facultatif |
 | [TP4](TP4_Regression/) | **Régression** | Logements en Californie | MAE / RMSE / R², régression linéaire, analyse des résidus, variables polynomiales, régularisation Ridge, modèles à base d'arbres ; Lasso en facultatif |
 | [TP5](TP5_Series_Temporelles/) | **Séries temporelles** | Vélos en libre-service à Washington | tendance et saisonnalité, découpage temporel, références naïves, ARIMA, approche supervisée ; stationnarité, ACF / PACF et validation croisée temporelle en facultatif |
+| [TP6](TP6_LLM_API/) | **Piloter un LLM depuis du code** | Critiques de films Allociné | appel d'API (SDK `openai`, Mistral), rôles et absence de mémoire, tokens et coût, température, ingénierie de prompt, sorties structurées (Pydantic), LLM classifieur comparé à TF-IDF + régression logistique ; few-shot, tailles de modèle et extraction d'information en facultatif |
 
 Les TP suivants seront publiés au fur et à mesure du semestre.
 
@@ -54,6 +55,8 @@ jupyter lab
 
 Ouvrez ensuite le notebook d'énoncé depuis le dossier du TP : les chemins vers `data/` sont relatifs à ce dossier.
 
+**TP d'IA générative (à partir du TP6).** Il vous faut en plus une clé d'API Mistral, gratuite (l'énoncé du TP6 explique comment l'obtenir et la ranger dans un fichier `.env`), ou un modèle installé sur votre ordinateur : voir [Installer_Ollama.md](Installer_Ollama.md).
+
 ## Sources des données
 
 | Fichier | Source |
@@ -63,3 +66,4 @@ Ouvrez ensuite le notebook d'énoncé depuis le dossier du TP : les chemins vers
 | `TP3_XGBoost/data/adult.csv.gz` | *Adult*, UCI Machine Learning Repository (via OpenML, jeu n° 1590) |
 | `TP4_Regression/data/california_housing.csv` | *California Housing*, R. K. Pace et R. Barry (1997), via `sklearn.datasets.fetch_california_housing` |
 | `TP5_Series_Temporelles/data/bike_sharing_day.csv` | *Bike Sharing Dataset*, H. Fanaee-T et J. Gama (2013), UCI Machine Learning Repository |
+| `TP6_LLM_API/data/allocine_*.csv` | extrait du jeu *Allociné* de T. Blard (2020), critiques de spectateurs du site Allociné.fr (Hugging Face `tblard/allocine`, licence MIT) : 5 000 critiques d'entraînement et 50 critiques courtes de test |
