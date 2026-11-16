@@ -60,7 +60,7 @@ jupyter lab
 
 Ouvrez ensuite le notebook d'énoncé depuis le dossier du TP : les chemins vers `data/` sont relatifs à ce dossier.
 
-**TP d'IA générative (à partir du TP6).** Il vous faut en plus une clé d'API Mistral, gratuite (l'énoncé du TP6 explique comment l'obtenir et la ranger dans un fichier `.env`), ou un modèle installé sur votre ordinateur : voir [Installer_Ollama.md](Installer_Ollama.md).
+**TP d'IA générative (à partir du TP6).** Il vous faut en plus une clé d'API Mistral, gratuite (l'énoncé du TP6 explique comment l'obtenir et la ranger dans un fichier `.env`), ou un modèle installé sur votre ordinateur : voir [Installer_Ollama.md](Installer_Ollama.md). D'autres fournisseurs gratuits sont possibles, en changeant trois lignes du `.env` : voir [Fournisseurs_LLM.md](Fournisseurs_LLM.md).
 
 ## Sources des données
 
