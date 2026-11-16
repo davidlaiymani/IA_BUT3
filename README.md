@@ -17,6 +17,10 @@ Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentiss
 
 Les TP suivants seront publiés au fur et à mesure du semestre.
 
+## Le projet
+
+Le module se termine par un projet en binôme : une application web qui associe une notion d'IA prédictive et une notion d'IA générative, présentée à la classe sous forme de cours inversé. Sujets, calendrier et attendus : [Projet/Projet.md](Projet/Projet.md).
+
 ### Contenu de chaque dossier de TP
 
 | Fichier | Rôle |

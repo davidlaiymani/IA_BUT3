@@ -48,6 +48,10 @@
 !/TP6_LLM_API/TP6_Enonce.ipynb
 !/TP6_LLM_API/data/
 
+!/Projet/
+/Projet/*
+!/Projet/Projet.md
+
 # Fichiers système et de travail
 .DS_Store
 .ipynb_checkpoints/
@@ -57,4 +61,5 @@
 !/TP3_XGBoost/TP3_Correction.ipynb
 !/TP4_Regression/TP4_Correction.ipynb
 !/TP5_Series_Temporelles/TP5_Correction.ipynb
+!/TP6_LLM_API/TP6_Correction.ipynb
 ~$*
