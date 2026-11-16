@@ -48,6 +48,12 @@
 !/TP6_LLM_API/TP6_Enonce.ipynb
 !/TP6_LLM_API/data/
 
+!/TP7_LLM_Outils/
+/TP7_LLM_Outils/*
+!/TP7_LLM_Outils/TP7_Cours.md
+!/TP7_LLM_Outils/TP7_Enonce.ipynb
+!/TP7_LLM_Outils/data/
+
 !/Projet/
 /Projet/*
 !/Projet/Projet.md
@@ -62,4 +68,5 @@
 !/TP4_Regression/TP4_Correction.ipynb
 !/TP5_Series_Temporelles/TP5_Correction.ipynb
 !/TP6_LLM_API/TP6_Correction.ipynb
+!/TP7_LLM_Outils/TP7_Correction.ipynb
 ~$*

@@ -14,6 +14,7 @@ Ce module vous fait pratiquer les grandes familles de problèmes de l'apprentiss
 | [TP4](TP4_Regression/) | **Régression** | Logements en Californie | MAE / RMSE / R², régression linéaire, analyse des résidus, variables polynomiales, régularisation Ridge, modèles à base d'arbres ; Lasso en facultatif |
 | [TP5](TP5_Series_Temporelles/) | **Séries temporelles** | Vélos en libre-service à Washington | tendance et saisonnalité, découpage temporel, références naïves, ARIMA, approche supervisée ; stationnarité, ACF / PACF et validation croisée temporelle en facultatif |
 | [TP6](TP6_LLM_API/) | **Piloter un LLM depuis du code** | Critiques de films Allociné | appel d'API (SDK `openai`, Mistral), rôles et absence de mémoire, tokens et coût, température, ingénierie de prompt, sorties structurées (Pydantic), LLM classifieur comparé à TF-IDF + régression logistique ; few-shot, tailles de modèle et extraction d'information en facultatif |
+| [TP7](TP7_LLM_Outils/) | **Donner des outils à un LLM** | Météo (Open-Meteo), logements en Californie (modèle du TP4) | appel d'outils (*tool use*), description d'un outil (JSON Schema), rôle `tool`, boucle d'agent, gestion des erreurs, modèle d'IA prédictive exposé comme outil, évaluation des choix d'outils, injection de prompt et confirmation humaine ; coût des outils, `tool_choice` et conversation en facultatif |
 
 Les TP suivants seront publiés au fur et à mesure du semestre.
 
@@ -71,3 +72,4 @@ Ouvrez ensuite le notebook d'énoncé depuis le dossier du TP : les chemins vers
 | `TP4_Regression/data/california_housing.csv` | *California Housing*, R. K. Pace et R. Barry (1997), via `sklearn.datasets.fetch_california_housing` |
 | `TP5_Series_Temporelles/data/bike_sharing_day.csv` | *Bike Sharing Dataset*, H. Fanaee-T et J. Gama (2013), UCI Machine Learning Repository |
 | `TP6_LLM_API/data/allocine_*.csv` | extrait du jeu *Allociné* de T. Blard (2020), critiques de spectateurs du site Allociné.fr (Hugging Face `tblard/allocine`, licence MIT) : 5 000 critiques d'entraînement et 50 critiques courtes de test |
+| `TP7_LLM_Outils/data/california_housing.csv` | le jeu du TP4 (*California Housing*) ; prévisions météo interrogées en direct sur [Open-Meteo](https://open-meteo.com/) (CC BY 4.0, gratuit pour un usage non commercial) |

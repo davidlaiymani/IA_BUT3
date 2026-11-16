@@ -57,7 +57,7 @@ C'est la même idée que la classification du TP2 : le modèle prédit une class
 ### 1.2 Ce que cela implique
 
 - Le modèle produit un texte **plausible**, pas un texte **vrai**. S'il ne connaît pas la réponse, il peut écrire avec aplomb une réponse fausse : on parle d'**hallucination**.
-- Ses connaissances s'arrêtent à la **date de fin d'entraînement**. Il ne connaît ni l'actualité ni vos documents (le TP7 montrera comment les lui fournir).
+- Ses connaissances s'arrêtent à la **date de fin d'entraînement**. Il ne connaît ni l'actualité ni vos données (le TP7 montrera comment les lui faire demander par des outils).
 - Il n'a **pas de mémoire** d'un appel à l'autre (section 2.3).
 - Deux appels identiques peuvent donner deux réponses différentes (section 4).
 
@@ -174,7 +174,7 @@ La **fenêtre de contexte** est le nombre maximal de tokens que le modèle peut 
 
 Cela paraît énorme, mais :
 
-- on ne peut pas y mettre tous les documents d'une entreprise (d'où le RAG, TP7) ;
+- on ne peut pas y mettre tous les documents d'une entreprise (d'où le RAG, présenté en fin de cours du TP7) ;
 - plus le prompt est long, plus l'appel est **lent** et **cher**, et plus le modèle risque de négliger une information noyée au milieu.
 
 ### 3.3 Le coût
